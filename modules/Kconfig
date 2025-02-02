@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: Apache-2.0
+
+menu "Modules"
+
+rsource "calculator/Kconfig"
+rsource "random_generator/Kconfig"
+
+endmenu

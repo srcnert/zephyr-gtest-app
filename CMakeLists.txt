@@ -1,0 +1,5 @@
+zephyr_include_directories(googletest)
+zephyr_include_directories(modules)
+
+add_subdirectory(googletest)
+add_subdirectory(modules)

@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  self:
+    path: zephyr-gtest-app
+    west-commands: scripts/west-commands.yml
+
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+    - name: googletest
+      url-base: https://github.com/google
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: v4.0.0
+      import:
+        name-allowlist:
+          - cmsis
+          - segger
+          - hal_nordic
+    - name: googletest-framework
+      remote: googletest
+      repo-path: googletest
+      revision: v1.15.2
+      path: zephyr-gtest-app/googletest/googletest

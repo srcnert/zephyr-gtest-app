@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: Apache-2.0
+
+config GOOGLETEST
+	bool "GOOGLETEST Framework Support"
+	help
+	  This option enables GOOGLETEST framework

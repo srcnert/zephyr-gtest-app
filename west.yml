@@ -8,7 +8,7 @@ manifest:
   remotes:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
-    - name: googletest
+    - name: google
       url-base: https://github.com/google
 
   projects:
@@ -20,8 +20,8 @@ manifest:
           - cmsis
           - segger
           - hal_nordic
-    - name: googletest-framework
-      remote: googletest
+    - name: googletest
+      remote: google
       repo-path: googletest
-      revision: v1.15.2
+      revision: e235eb34c6c4fed790ccdad4b16394301360dcd4
       path: zephyr-gtest-app/googletest/googletest

@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: Apache-2.0
+
+cmake_minimum_required(VERSION 3.20.0)
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+project(googletest_sample)
+
+FILE(GLOB app_sources test/*.cpp)
+
+target_sources(app PRIVATE ${app_sources})
+
+# Include
+zephyr_include_directories(
+    test
+)

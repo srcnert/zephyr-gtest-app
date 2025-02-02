@@ -1,5 +1,5 @@
 #include <zephyr/kernel.h>
-#include <zephyr/random/rand32.h>
+#include <zephyr/random/random.h>
 #include "RandomGenerator.h"
 
 int ZephyrRandomGenerator::getRandomNumber(uint32_t* value) {

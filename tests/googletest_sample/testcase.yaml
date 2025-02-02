@@ -1,0 +1,6 @@
+common:
+  tags: extensibility
+  integration_platforms:
+    - mps2/an385
+tests:
+  tests.googletest_sample: {}

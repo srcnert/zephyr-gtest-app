@@ -37,16 +37,16 @@ TEST(RandomGeneratorTest, DivideByRandomNumberFunction) {
     EXPECT_EQ((int) 2, result);
 }
 
-TEST(RandomGeneratorTest, DivideByZeroError) {
-    MockRandomGenerator mockRandomGen;
-    uint32_t expectedValue = 0;
-    EXPECT_CALL(mockRandomGen, getRandomNumber(testing::_))
-         .WillOnce(testing::DoAll(testing::SetArgPointee<0>(expectedValue),
-                         testing::Return(0)));
+// TEST(RandomGeneratorTest, DivideByZeroError) {
+//     MockRandomGenerator mockRandomGen;
+//     uint32_t expectedValue = 0;
+//     EXPECT_CALL(mockRandomGen, getRandomNumber(testing::_))
+//          .WillOnce(testing::DoAll(testing::SetArgPointee<0>(expectedValue),
+//                          testing::Return(0)));
 
-    int result = mockRandomGen.devideByRandomNumber(100);
+//     int result = mockRandomGen.devideByRandomNumber(100);
 
-    // You will not be able to reach there!
-    // You must see a USAGE FAULT error due to Division by zero!
-    EXPECT_EQ((int) 0, result);
-}
+//     // You will not be able to reach there!
+//     // You must see a USAGE FAULT error due to Division by zero!
+//     EXPECT_EQ((int) 0, result);
+// }

@@ -3,4 +3,7 @@ common:
   integration_platforms:
     - mps2/an385
 tests:
-  tests.random_generator: {}
+  RandomGeneratorTest.MockRandomNumberGeneration:
+    harness: gtest
+  RandomGeneratorTest.DivideByRandomNumberFunction:
+    harness: gtest

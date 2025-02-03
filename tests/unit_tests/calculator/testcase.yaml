@@ -2,6 +2,8 @@ common:
   tags: extensibility
   integration_platforms:
     - mps2_an385
-  harness: gtest
 tests:
-  - CalculatorTest.AddTest
+  CalculatorTest.AddTest:
+    harness: gtest
+  CalculatorTest.MultiplyTest:
+    harness: gtest

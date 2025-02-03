@@ -1,5 +1,6 @@
 .vscode
 
+googletest/googletest
 app/hello_world/build
 
 # editors

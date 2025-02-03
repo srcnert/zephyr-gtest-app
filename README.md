@@ -1,5 +1,8 @@
 ## Getting Started
 This project is prepared to use GoogleTest platform with Zephyr RTOS.
+To support googletest platform on Zephyr RTOS, two files, gtest.cc and gtest-port.h, 
+must be updated. I prepared two example projects which are calculator and
+random_generator. It is possible to run these on mps2/an385 board or real hw.
 
 ### Initialization
 ```shell
